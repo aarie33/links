@@ -55,6 +55,17 @@ h1{font-size:clamp(2rem,8vw,2.5rem);font-weight:800;letter-spacing:-.03em;line-h
 .bio{color:var(--blue-100);max-width:32ch;animation:up .9s .28s var(--ease) both}
 @keyframes up{from{opacity:0;transform:translateY(16px);filter:blur(6px)}}
 
+/* socials */
+.socials{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:up .9s .4s var(--ease) both}
+.social{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;text-decoration:none;
+  font-weight:700;color:var(--ink);background:var(--white);
+  box-shadow:0 14px 30px -14px rgba(3,20,90,.65);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.social svg{width:22px;height:22px;color:var(--blue-600)}
+.social:hover,.social:focus-visible{transform:translateY(-3px);outline:none}
+.social:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+.sec{font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-100);
+  text-align:center;animation:up .9s .5s var(--ease) both}
+
 /* links */
 .links{display:flex;flex-direction:column;gap:14px}
 .card{position:relative;display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:20px;
