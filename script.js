@@ -22,7 +22,7 @@ PROMPTS.forEach((it, n) => {
     const el = tpl.content.firstElementChild.cloneNode(true);
     const full = it.text.trim();
     const flat = full.replace(/\s+/g, ' ');
-    el.style.setProperty('--i', 5 + n);
+    el.style.setProperty('--i', 6 + n);
     el.querySelector('.ptitle').textContent = it.title;
     el.querySelector('.pprev').textContent = flat.length > 100 ? flat.slice(0, 100).trimEnd() + '…' : flat;
     const btn = el.querySelector('.copy'), label = btn.firstElementChild;
