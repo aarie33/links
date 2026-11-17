@@ -71,9 +71,28 @@
     </a>
   </nav>
 
+  <h2 class="sec">Prompt</h2>
+
+  <section class="links" id="prompts" aria-label="Daftar prompt">
+    <template id="prompt-tpl">
+      <details class="card prompt">
+        <summary>
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <span class="txt"><strong class="ptitle"></strong></span>
+          <span class="arr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </summary>
+        <div class="pbody">
+          <p class="pprev"></p>
+          <button class="copy" type="button"><span>Salin prompt</span></button>
+        </div>
+      </details>
+    </template>
+  </section>
+
   <footer>© <span id="y"></span> aarie33 · <a href="https://aarie33.github.io/">Portfolio</a></footer>
 </main>
 
+<script src="data/prompts.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

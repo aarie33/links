@@ -101,3 +101,25 @@ footer a:hover{text-decoration-color:var(--white)}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
     animation-delay:0s!important;transition-duration:.001ms!important}
 }
+
+/* prompts */
+.prompt{display:block;padding:0}
+.prompt summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:16px 18px;
+  -webkit-tap-highlight-color:transparent}
+.prompt summary::-webkit-details-marker{display:none}
+.prompt summary:focus-visible{outline:3px solid var(--blue-600);outline-offset:-3px;border-radius:20px}
+.prompt .arr svg{transition:transform .4s var(--ease)}
+.prompt[open] .arr svg{transform:rotate(180deg)}
+.prompt[open] .arr{background:var(--blue-600);color:var(--white)}
+.prompt:hover{transform:none}
+.pbody{display:flex;flex-direction:column;gap:12px;padding:0 18px 18px;position:relative;z-index:1}
+.pprev{font-size:.9rem;line-height:1.5;color:#33437a;background:#eef3ff;border-radius:12px;padding:12px 14px;
+  overflow-wrap:anywhere;white-space:pre-line}
+.copy{font:inherit;font-weight:700;cursor:pointer;border:0;border-radius:14px;padding:14px 18px;min-height:48px;
+  color:var(--white);background:var(--blue-600);transition:background .3s,transform .2s var(--ease)}
+.copy:hover{background:var(--blue-700)}
+.copy:active{transform:scale(.98)}
+.copy:focus-visible{outline:3px solid var(--blue-600);outline-offset:2px}
+.copy.done{background:#0a8f4e}
+@media (min-width:520px){.copy{align-self:flex-start;padding-inline:28px}}
+.perr{text-align:center;color:var(--blue-100);font-size:.9rem}
